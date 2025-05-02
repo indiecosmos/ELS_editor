@@ -1,17 +1,3 @@
-import zipfile
-from pathlib import Path
-
-# Create the base directory
-repo_root = Path("/mnt/data/ELS_Lightbar_Editor")
-repo_root.mkdir(exist_ok=True)
-
-# Copy els_editor.py from uploaded file
-source_script = Path("/mnt/data/els_editor (2).py")
-target_script = repo_root / "els_editor.py"
-target_script.write_text(source_script.read_text())
-
-# Create README.md
-readme_text = """
 # 🚨 ELS Lightbar Pattern Editor
 
 A standalone emergency lighting pattern editor inspired by ERLC (Emergency Response Liberty County). Create, visualize, and save custom lightbar animations for front and rear lights with color-coded rows and customizable flash speeds.
