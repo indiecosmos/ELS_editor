@@ -70,3 +70,11 @@ A standalone emergency lighting pattern editor inspired by ERLC (Emergency Respo
 - **FPM Box** — enter a number to change playback speed
 
 ---
+
+## 🗂 File Structure
+
+├── els_editor.py # Main Python script
+├── lightbar_pattern.json # (Generated) pattern save file
+├── README.md # This file
+└── LICENSE # Open-source license
+
